@@ -1,0 +1,65 @@
+React Components let u break up the user interface into separate pieces
+that can then be reused and handled independently.
+
+One component can contain multiple HTML elements/objects
+
+Functional Components
+    
+    1.  Functional Components are basic JS functions. These are typically arrow functions
+        but can also be created with the regular function keyword.
+    2.  React lifecycle methods (for example, ComponentDidMount) cannot be used in functional Components (used in class component).
+    3.  There is no render method used in functional Components.
+        means it is use only where there are only return html elements/objects( whenever create only UI )
+    4.  These are mainly responsible for UI and are typically presentational only (for example, a button component).
+    5.  Functional components can accept and use props(props is a property).
+    6.  Functional Components should be favored if you do not need to make use of React state.
+
+Class Components
+
+    1.  class components make use of ES6 class and extend the component class in react.
+    2.  Sometimes called "smart" or "stateful" components as 
+    3.  React lifecycle methods can be used inside class components
+        example, ComponentDidMount
+    4.  you pass props down to class components and access to 
+
+
+Note:React renders HTML to the web page by using a function called render().
+     The purpose of the function is to display the specified HTML code inside
+     the specified HTML element. In the render() method, we can read props and
+     state and return our JSX code to the root component of our app.
+     (render means giver)
+
+**Note: Functional               vs           Class component
+      ->Simple JS Function             ->Maintain their own private
+      ->Use functional as                data
+        much as possible               ->Provide Lifecycle hooks
+      ->mainly responsible
+        for UI
+      ->stateless but 
+        after 16.7.0 new concept
+        Hooks
+
+Hooks: are javascript functions, but they impose two additional rules:
+        1.Only call Hooks at the top level. Don't call hooks inside loops,
+          conditions, or nested functions.
+        2.Only call Hooks from React function components. Don't call Hooks
+          from regular JS functions.
+          (There is just one other valid place to call Hooks - your own custom
+          Hooks.) 
+
+props: with the help of props component recieve defined attribute's value use it/display it 
+       props is immutable means once assign value in props after that cannot assign value
+
+       1. props get passed to the component
+       2. props are immutable
+       3. to access props, pass in the function - functional component
+       4. using this keyword to access props - class component
+
+state: 1. state is managed within the component
+       2. state can be changed
+       3. UseState Hook use in functional component as well
+       4. we this.state in class component
+  
+Note: Super() function is to call the constructor of the parent class.
+      this keyword: When using 'this' in an object, this will refer to the object itself.
+                    This makes it easy to refer to an object's values in the object's methods.

@@ -1,0 +1,5 @@
+npm init
+npm install -D parcel
+npx parcel index.html
+npm i browserslist
+npm install react react-dom
